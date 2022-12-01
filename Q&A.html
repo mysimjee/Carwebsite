@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q&A</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script>
+		function showmodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "block"
+		}
+
+		function closemodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "none"
+		}
+
+		function showmenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "flex";
+		}
+
+		function hidemenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "none";
+		}
+	</script>
+</head>
+<body>
+	<header>
+	<div class="header">
+		<div class="logotext"><h1 id="logo">The Vintage Rally Club of South East Asia</h1></div>
+		<div class="navigation">
+			<a href="Home.html" class="unactive1">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="unactive3">About Us</a>
+			<a href="Q&A.html" class="active">Q&A</a>
+			<a href="Register_Online.html" class="unactive5">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+		</div>
+
+		<div class="mobile-menu-button" id="menu-button"><button onclick="showmenu()" id="open-menu">Menu</button></div>
+		<div class="mobile-navigation" id = "mobile-menu">
+			<a href="Home.html" class="unactive1">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="unactive3">About Us</a>
+			<a href="Q&A.html" class="active">Q&A</a>
+			<a href="Register_Online.html" class="unactive5">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button1" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+			<a id = "close-button" onclick="hidemenu()">Close</a>
+		</div>
+	</div>
+	</header>
+
+<section>
+	<div class="section-1">
+		<h2 id="intro-heading">Welcome To Forum</h2>
+		<p id="intro-paragraph">This is a forum where registered member can dicuss topic related to vintage car with other club member's. Please avoid usage of offensive word and sentences that can be consider offensive and hurt someone sentiment.
+		</p>
+	</div>
+
+	<div class="search-section">
+		<input type="text" placeholder="Search.." name="search" id="search-bar">
+		<button type="submit" id="search-button"><span id="ss">Search  </span><span id="sss">&#128270;</span></button>
+	</div>
+
+	<div class="forum-menu-section">
+		<button>Create community</button>
+		<button>Create Post</button>
+		<button>Log Out</button>
+		
+	</div>
+
+
+	<div class="loginbox">
+	<form class="loginboxx">
+		<label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> <span>Remember me</span>
+    </label>
+    <br>
+     <a href="#">Forgot password?</a>
+
+	</form>
+		
+	</div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+	<footer>
+	<div class="footer">
+
+		<div class="haddress">
+			<p> The Vintage Car Club of South East Asia<br>
+					32 Street Middle Block, Pabedan<br>
+				Yangon, South East Asia 80104<br>
+			</p>
+
+		</div>
+
+		<div class="footer-caption">
+			<p id="footer-text">COPYRIGHT 2022 - VINTAGE CAR CLUB OF South East Asia 	
+					<span id="sbutton">
+						<a href="https://www.facebook.com" class="social-button"><img src="Images/facebook.png" id="fb" alt="Facebook Icon"></a>
+
+						<a href="https://www.twitter.com" class="social-button"><img src="Images/twitter.png" id="tw" alt="Twitter Icon"></a>
+
+						<a href="https://www.instagram.com" class="social-button"><img src="Images/ins.png" id="ig" alt="Instagram Icon"></a>
+					</span>
+			</p>
+			
+		</div>
+	</div>
+	</footer>
+
+
+	<div id="modal">
+		<div id="modal-content">
+
+			<h3 id="modal-heading">Events Info</h3>
+			<p id="modal-text">Date: 10.10.2022<br>
+					   		   Time: 8am to 9pm<br>
+					           Location: Karaweik Garden
+			</p>
+		    <span id="button"><a id="closemodalbutton" onclick="closemodal()">Close</a>
+			<a href="Register_Online.html" id="register-button">Register Online</a></span>
+		</div>
+	</div>
+
+
+</body>
+</html>

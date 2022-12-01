@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Online</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script>
+		function showmodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "block"
+		}
+
+		function closemodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "none"
+		}
+
+		function showmenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "flex";
+		}
+
+		function hidemenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "none";
+		}
+
+	</script>
+</head>
+<body>
+	<header>
+	<div class="header">
+		<div class="logotext"><h1 id="logo">The Vintage Rally Club of South East Asia</h1></div>
+		<div class="navigation">
+			<a href="Home.html" class="unactive1">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="unactive3">About Us</a>
+			<a href="Q&A.html" class="unactive4">Q&A</a>
+			<a href="Register_Online.html" class="active">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+		</div>
+
+		<div class="mobile-menu-button" id="menu-button"><button onclick="showmenu()" id="open-menu">Menu</button></div>
+		<div class="mobile-navigation" id = "mobile-menu">
+			<a href="Home.html" class="unactive1">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="unactive3">About Us</a>
+			<a href="Q&A.html" class="unactive4">Q&A</a>
+			<a href="Register_Online.html" class="active">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button1" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+			<a id = "close-button" onclick="hidemenu()">Close</a>
+		</div>
+	</div>
+	</header>
+
+
+
+
+	<section>
+	<div class="section-1">
+		<h2 id="intro-heading">Stages of Rally</h2>
+		<p id="intro-paragraph">A vintage rally typically include three stages, each of which has its own beginning and end. However, not all stages are created equally. One stage is more important than others.
+		</p>
+
+		<div class="stages">
+			<span class="stagesno" id="stagesno1">
+				<b>1.Super Stage</b><br>
+				<span>This is probably what's imagine when someone says "rally". It take place on a empty road close to public and ranges from a kilometer to several tens of kilometres. Every vintage car will make a round trip.</span>
+			</span>
+
+			<span class="stagesno" id="stagesno2">
+				<b>2.Power Stage</b><br>
+				<span>In every VRCSA rally, at the end of the event is known as "power stage". It is broadcast on TV and social meida. There are extra points for the three crews whose car still have original components.</span>
+			</span>
+
+
+			<span class="stagesno" id="stagesno3">
+				<b>3.Transport Stage</b><br>
+				<span>The final stage is known as transport stage. The vintage car will be driven in normal traffic while obeying national road law to showoff the beauty. The winner will be selected after end of final stage.</span>
+			</span>
+			
+		</div>
+
+		<span><span class="country-paragraph"><br><b>Countries Overview:</b> Annual events are held in one of these countries that are part of South East Asia. Those countries are Myanmar, Laos, Vietnam, Singapore and Thailand.  Southeast Asia has these things in spades. It's also steeped in rich, ancient customs and traditions that are remarkably different from those of the West.</span></span>
+	</div>
+
+
+	<div class="registration">
+
+		<div class="rform">
+			<div class="step1">
+				<h2>BASIC INFO</h2>
+				<p>This page is design for both existing or new members to apply for annual membership, either for one year of for three years. You do not need to have a credit card. You can pay in cash at our office. It is necessary to become participant in the annual competition during rally.
+				</p>
+			</div>
+
+			<form class="registration-forms" action="Register_Online.html">
+  				<div>
+  					<label for="prefix">PREFIX</label>
+  					<input type="text" id="prefix" name="prefix" placeholder="Type your prefix..">
+  				</div>
+
+
+				<div>
+					<label for="fname">First Name:</label>
+  					<input type="text" id="fname" name="fname" placeholder="Your name.." aria-label="Type your First Name">
+  				</div>
+
+  				<div>
+  					<label for="lname">Last Name:</label>
+                	<input type="text" id="lname" name="lname" placeholder="Your surname.." aria-label="Type your Last Name">
+  				</div>
+
+
+  				<div>
+  					<label for="Occupation">Occupation</label>
+                	<input type="text" id="Occupation" name="job" placeholder="What's your occupation?" aria-label="Occupation">
+  				</div>
+
+
+ 
+  				<div>
+  					<label for="Email">Email Address</label>
+                	<input type="text" id="Email" name="lname" placeholder="Type E-mail" aria-label="Email Address">
+  				</div>
+
+
+  				<div>
+  					<label for="Confirm">Confirm Email</label>
+                	<input type="text" id="Confirm" name="confirmmail" placeholder="Type E-mail again" aria-label="Confirm Email">
+  				</div>
+
+
+  				<div>
+				  <label for="username">Username</label>
+				  <input type="text" id="username" placeholder="Enter Username" aria-label="Type Username" name="username" required>
+				</div>
+
+
+				<div>
+					<label for="password">Password</label>
+					<input type="password" id="password" placeholder="Type Password" aria-label="Type Password" name="password" required>
+				</div>
+
+				<div>
+					<label for="cpassword">Confirm Password</label>
+					<input type="password" id="cpassword" placeholder="Type Password again" aria-label="Type Password again" name="cpassword" required>
+				</div>
+
+
+
+   				<div>
+  					<label for="STREET">STREET ADDRESS</label>
+                	<input type="text" id="STREET" name="streetaddress" aria-label="Type Street Address" placeholder="Type your street address">
+  				</div>
+
+
+   				<div>
+  					<label for="CITY">CITY</label>
+                	<input type="text" id="CITY" name="cityname" aria-label="Type City Name" placeholder="Enter your city name">
+  				</div>
+
+
+   				<div>
+  					<label for="STATE">STATE</label>
+                	<input type="text" id="STATE" name="statename" aria-label="Type state name" placeholder="Type name of your state">
+  				</div>
+
+
+   				<div>
+  					<label for="country">COUNTRY</label>
+                	<input type="text" id="country" name="countryname" aria-label="Type Country Name" placeholder="Enter Country Name">
+  				</div>
+
+
+   				<div>
+  					<label for="PHONE">PHONE NUMBER</label>
+                	<input type="text" id="PHONE" name="digitnumber" aria-label="Enter phone number" placeholder="Enter mobile number">
+  				</div>
+
+
+   				<div>
+
+   					<label for="gender">Gender</label>
+  					<select class="rselect" name="Gender" id="gender" aria-label="select your gender">
+						<option value="choose">Select Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Other">Other</option>
+					</select>
+  				</div>
+
+
+   				<div>
+  					<label for="vintage-car-selection">Do You Own a Vintage Car?</label>
+   					<select class="rselect" id="vintage-car-selection" aria-label="Are you owner of a vintage car?">
+  						<option>Select Yes Or No</option>					
+  						<option>Yes</option>
+  						<option>No</option>
+  					</select>
+
+  				</div>
+
+
+  				<div>
+  					<label for="current-membership-status">Current Membership</label>
+  					<select class="rselect" id="current-membership-status" aria-label="Are you old or new member of club?">
+  						
+  						<option>Are you Old or New Member?</option>
+  						<option>New Member</option>
+  						<option>Existing Member</option>
+  					</select>
+  				</div>
+
+  				<div>
+  					<label for="membership-type">Membership Type</label>
+  					<select class="rselect" id="membership-type" aria-label="Do you want free or Premium membership?">
+  						<option>Free or Premium</option>
+  						<option>Free - $0</option>
+  						<option>Premium (access to exclusive event, mercandise discount etc) - $10</option>
+  					</select>
+  				</div>
+			
+
+				<div id="registraion-button">
+					<script>
+						function showsuccc() {
+							alert('Your registration is successful!')
+						}
+					</script>
+					<div id="regbutton-1"><input type="submit" name="submit" value="Submit" onclick="showsuccc()" title="Clicking Submit button will submit information you enter"></div>
+					<div id="regbutton-2"><input type="reset" name="reset" value="Clear" title="clicking clear buttion will delete text you enter in the field above "></div>
+				</div>
+			</form>
+			
+		</div>
+
+		<div class="rbenefit">
+			<div>
+				<h3><img src="Images/memform.png" alt="Form Icon">MEMBERSHIP FORM</h3>
+				<p>Download our printable Membership Form to join or renew by mail.</p>
+			</div>
+
+
+			<div>
+				<h3><img src="Images/vip.png" alt="VIP Icon">About Our Club</h3>
+				<p>Learn why our members believe the VRCSA experience is unequalled.</p>
+			</div>
+
+
+			<div>
+				<h3><img src="Images/location.png" alt="Location Icon">Join Our Community</h3>
+				<p>Interested in getting more involved in your community? Contact your local region to become a member.</p>
+			</div>
+
+
+			<div>
+				<h3><img src="Images/store.png" alt="Store Icon">VRCSA STORE</h3>
+				<p>Gear up and show off your membership pride with our large selection of branded merchadise.</p>
+			</div>
+		</div>
+
+
+
+	</div>
+	</section>
+
+	<footer>
+	<div class="footer">
+
+		<div class="haddress">
+			<p> The Vintage Car Club of South East Asia<br>
+					32 Street Middle Block, Pabedan<br>
+				Yangon, South East Asia 80104<br>
+			</p>
+
+		</div>
+
+		<div class="footer-caption">
+			<p id="footer-text">COPYRIGHT 2022 - VINTAGE CAR CLUB OF South East Asia 	
+					<span id="sbutton">
+						<a href="https://www.facebook.com" class="social-button"><img src="Images/facebook.png" id="fb" alt="Facebook Icon"></a>
+
+						<a href="https://www.twitter.com" class="social-button"><img src="Images/twitter.png" id="tw" alt="Twitter Icon"></a>
+
+						<a href="https://www.instagram.com" class="social-button"><img src="Images/ins.png" id="ig" alt="Instagram Icon"></a>
+					</span>
+			</p>
+			
+		</div>
+	</div>
+	</footer>
+
+
+	<div id="modal">
+		<div id="modal-content">
+
+			<h3 id="modal-heading">Events Info</h3>
+			<p id="modal-text">Date: 10.10.2022<br>
+					   		   Time: 8am to 9pm<br>
+					           Location: Karaweik Garden
+			</p>
+		    <span id="button"><a id = "closemodalbutton" onclick="closemodal()">Close</a>
+			<a href="Register_Online.html" id="register-button">Register Online</a></span>
+		</div>
+	</div>
+
+</body>
+</html>

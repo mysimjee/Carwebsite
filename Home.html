@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script>
+		function showmodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "block"
+		}
+
+		function closemodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "none"
+		}
+
+		function showmenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "flex";
+		}
+
+		function hidemenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "none";
+		}
+	</script>
+</head>
+<body>
+	<header>
+	<div class="header">
+		<div class="logotext"><h1 id="logo">The Vintage Rally Club of South East Asia</h1></div>
+		<div class="navigation">
+			<a href="Home.html" class="active">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="unactive3">About Us</a>
+			<a href="Q&A.html" class="unactive4">Q&A</a>
+			<a href="Register_Online.html" class="unactive5">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+		</div>
+
+		<div class="mobile-menu-button" id="menu-button"><button onclick="showmenu()" id="open-menu">Menu</button></div>
+		<div class="mobile-navigation" id = "mobile-menu">
+			<a href="Home.html" class="active">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="unactive3">About Us</a>
+			<a href="Q&A.html" class="unactive4">Q&A</a>
+			<a href="Register_Online.html" class="unactive5">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button1" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+			<a id = "close-button" onclick="hidemenu()">Close</a>
+		</div>
+	</div>
+	</header>
+
+
+	<section>
+	<div class="section-1">
+		<h2 id="intro-heading">South East Asia Foremost Historic Motoring Authority</h2>
+		<p id="intro-paragraph">Welcome to one of the largest motoring clubs in Yangon. With over 8,000 members and many thousands of vehicles and motorcycles listed on the club’s database, the Vintage Car Club of South East Asia offers something for everyone. You don’t need to own a Vintage vehicle to become a member – our club caters for all Types of cars, motorcycles, commercial and military vehicles which are over 30 years old and are in compliance with VRCSA period category requirements.
+		</p>
+	</div>
+	<div class="section-2">
+		<div class="slideshow">
+			<div class="img-wrap">
+				<div class="slide"><h3 class="slidenumber">Mercedes</h3></div>
+				<div class="slide"><h3 class="slidenumber">Cadillac</h3></div>
+				<div class="slide"><h3 class="slidenumber">BMW</h3></div>
+				<div class="slide"><h3 class="slidenumber">Toyota</h3></div>
+				<div class="slide"></div>
+			</div>
+		</div>
+
+		<div class="section-3">
+			<p id="caption"> Here are the picture of some vintage that participate in 2013 car show. All of the car in the photo are built before 1960's. Some of them can even be describe as antique because they are over 45 years old.</p>
+		</div>
+
+
+	</div>
+
+
+
+	<div class="section-4">
+
+		<div class="classic-car">
+			<h2>The Best Classic Cars</h2>
+
+		</div>
+
+		<div class="home-contents">
+			<div>
+				<img src="Images/homecar.jpg" alt="Bullnose Morris Bullnose Picture">
+				<h2>1926 Morris Cowley Bullnose</h2>
+				<p>The Bullnose Morris Bullnose, and its more expensive, better-equipped stablemate the Oxford, were among the most popular cars of the 1920s.</p>
+
+			</div>
+
+
+			<div>
+				<img src="Images/car2.jpg" alt="Land Rover Series III Picture">
+				<h2>1971 Land Rover Series III</h2>
+				<p>During the series-III production run from 1971 until 1985, the 1,000,000th Land Rover rolled off the production line in 1976.</p>
+			</div>
+
+			<div>
+				<video controls autoplay>
+					<source src="Video/car1.mp4">
+				</video>
+				<h2>2019 Car Show Event</h2>
+				<p>In this event, Hundred of Vintage Car owner participate to present their antique car to the world.</p>
+
+			</div>
+
+		</div>
+
+		<div class="main-audio">
+			<p><b>Narration Audio:</b> <audio controls><source src="Audio/main.mp3"></audio></p>
+			
+		</div>
+
+
+
+
+		
+	</div>
+	</section>
+
+	
+
+
+
+	<footer>
+	<div class="footer">
+
+		<div class="haddress">
+			<p> The Vintage Car Club of South East Asia<br>
+					32 Street Middle Block, Pabedan<br>
+				Yangon, South East Asia 80104<br>
+			</p>
+
+		</div>
+
+		<div class="footer-caption">
+			<p id="footer-text">COPYRIGHT 2022 - VINTAGE CAR CLUB OF South East Asia 	
+					<span id="sbutton">
+						<a href="https://www.facebook.com" class="social-button"><img src="Images/facebook.png" id="fb" alt="Facebook Icon"></a>
+
+						<a href="https://www.twitter.com" class="social-button"><img src="Images/twitter.png" id="tw" alt="Twitter Icon"></a>
+
+						<a href="https://www.instagram.com" class="social-button"><img src="Images/ins.png" id="ig" alt="Instagram Icon"></a>
+					</span>
+			</p>
+			
+		</div>
+	</div>
+	</footer>
+
+	<div id="modal">
+		<div id="modal-content">
+
+			<h3 id="modal-heading">Events Info</h3>
+			<p id="modal-text">Date: 10.10.2022<br>
+					   		   Time: 8am to 9pm<br>
+					           Location: Karaweik Garden
+			</p>
+		    <span id="button"><a id="closemodalbutton" onclick="closemodal()">Close</a>
+			<a href="Register_Online.html" id="register-button">Register Online</a></span>
+		</div>
+	</div>
+</body>
+</html>

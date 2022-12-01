@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script>
+		function showmodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "block"
+		}
+
+		function closemodal() {
+			var modal = document.getElementById("modal");
+			modal.style.display = "none"
+		}
+
+		function showmenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "flex";
+		}
+
+		function hidemenu() {
+			var menu = document.getElementById("mobile-menu");
+			menu.style.display = "none";
+		}
+	</script>
+</head>
+<body>
+	<header>
+	<div class="header">
+		<div class="logotext"><h1 id="logo">The Vintage Rally Club of South East Asia</h1></div>
+		<div class="navigation">
+			<a href="Home.html" class="unactive1">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="active">About Us</a>
+			<a href="Q&A.html" class="unactive4">Q&A</a>
+			<a href="Register_Online.html" class="unactive5">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+		</div>
+
+		<div class="mobile-menu-button" id="menu-button"><button onclick="showmenu()" id="open-menu">Menu</button></div>
+		<div class="mobile-navigation" id = "mobile-menu">
+			<a href="Home.html" class="unactive1">Home</a>
+			<a href="Contact_Us.html" class="unactive2">Contact Us</a>
+			<a href="About_Us.html" class="active">About Us</a>
+			<a href="Q&A.html" class="unactive4">Q&A</a>
+			<a href="Register_Online.html" class="unactive5">Register Online</a>
+			<a href="Our_drivers.html" class="unactive6">Our Drivers</a>		
+			<a id="modal-popup-button1" onclick="showmodal()" class="unactive7" href="#modal">Next Event Info</a>
+			<a id = "close-button" onclick="hidemenu()">Close</a>
+		</div>
+	</div>
+	
+	</header>
+
+
+	<section>
+	<div class="section-1">
+		<h2 id="intro-heading">Our Club - One & Only Vintage Car Club in South East Asia</h2>
+		<p id="intro-paragraph">The Vintage Rally Club of South East Asia (VRCSA) is about vintage automobiles and the pleasure of the sport. Since its beginning in 1952, the Members of the VRCSA have been dedicated to the collection, preservation and enjoyment of the finest cars in South East Asia. Automobiles manufactured from 1915 to 1980 remain the primary focus of the club today. VRCSA members have held Grand Classic® car shows, enjoyed CARavans and published The Classic Car magazine plus other materials every year since the Club's founding.
+		</p>
+	</div>
+
+	<div class="about-information">
+
+
+		<div class="infos">
+			<button onclick="showinfo1()" class="showabout"><span class="info-heading"><span class="heading-info">Club Mission Statement</span>
+
+				<span class="info-text" id="text"><span class="aboutimage"><img src="Images/car-garage.jpg" class="about-image" alt="Car Garage Image"></span><span class="para">The purposes for which the Club are founded are: for the development, publication and interchange of technical, historical and other information for and among members and other persons who own or are interested in fine or unusual foreign or domestic motorcars built between and including the years 1915 and 1948 and are distinguished for their representative fine design, high engineering standards and superior workmanship, and to promote social exchange and fellowship among its members: and to maintain references upon and encourage the maintenance, restoration, and preservation of all such Classic cars.</span></span>
+			</span></button>
+		</div>
+
+
+		<div class="infos">
+			<button onclick="showinfo2()" class="showabout"><span class="info-heading"><span class="heading-info">Club History</span>
+				<span class="info-text" id="text2"><span class="aboutimage"><img src="Images/antiquecar.jpg" class="about-image" alt="Old Car Picture"></span><span class="para">The year was 1951. Owners of Packards and the like - vintage late 1920's to early 1930's - found to their chagrin, upon arriving at old car meets, that they were ineligible to participate as their vehicles were termed "modern". Vintage Club of South East Asia, the nation's oldest organization, had relegated the enthusiasts' chosen wheels to Class 19, designated "Tow Cars." Since these vehicles were, to their minds more properly defined by the term "Classic", a new organization seemed called for. The VRCSA was born later that year, In March of 1952, entertainer Herb Shriner invited the fledgling club to exhibit at the Local Motor Sport Show held at the Karaweik Park. Before the show, VRCSA membership stood at twenty. By the end of the show, seventy five more enthusiasts had been signed up.</span>
+			</span></span></button>
+		</div>
+
+
+		<div class="infos">
+			<button onclick="showinfo3()" class="showabout"><span class="info-heading"><span class="heading-info">Defining a Classic</span>
+				<span class="info-text" id="text3"><span class="aboutimage"><img src="Images/car-classic.jpg" class="about-image" alt="Picture of Car with sunset background"></span><span class="para">Usually the cars recognized as "VRCSA Classics" were built in limited production numbers and were quite expensive when new. As a group, they represent the pinnacle of engineering, styling and design for their era.</span></span>
+
+			</span></button>
+		</div>
+
+		<div class="infos">
+			<button onclick="showinfo4()" class="showabout"><span class="info-heading"><span class="heading-info">Grand Classics</span>
+				<span class="info-text" id="text4"><span class="aboutimage"><img src="Images/grand-classic.jpg" class="about-image" alt="Two Seat Car Picture"></span><span class="para">Our Grand Classics are exciting and fun events to participate in for the collector and the whole family. You do not have to own a Classic Car to participate in Grand Classic activities. The Grand Classics are the premier National shows for Classic Cars, and the VRCSA judging standards are used by all of the major concours shows. A VRCSA National first is recognized throughout the hobby as the standard of excellence.</span></span>
+
+			</span></button>
+		</div>
+
+	</div>
+</section>
+
+
+
+	<footer>
+	<div class="footer">
+
+		<div class="haddress">
+			<p>The Vintage Car Club of South East Asia<br>
+					32 Street Middle Block, Pabedan<br>
+				Yangon, South East Asia 80104<br>
+			</p>
+
+		</div>
+
+		<div class="footer-caption">
+			<p id="footer-text">COPYRIGHT 2022 - VINTAGE CAR CLUB OF South East Asia 	
+					<span id="sbutton">
+						<a href="https://www.facebook.com" class="social-button"><img src="Images/facebook.png" id="fb" alt="Facebook Icon"></a>
+
+						<a href="https://www.twitter.com" class="social-button"><img src="Images/twitter.png" id="tw" alt="Twitter Icon"></a>
+
+						<a href="https://www.instagram.com" class="social-button"><img src="Images/ins.png" id="ig" alt="Instagram Icon"></a>
+					</span>
+			</p>
+			
+		</div>
+	</div>
+	</footer>
+
+	<div id="modal">
+		<div id="modal-content">
+
+			<h3 id="modal-heading">Events Info</h3>
+			<p id="modal-text">Date: 10.10.2022<br>
+					   		   Time: 8am to 9pm<br>
+					           Location: Karaweik Garden
+			</p>
+		    <span id="button"><a id = "closemodalbutton" onclick="closemodal()">Close</a>
+			<a href="Register_Online.html" id="register-button">Register Online</a></span>
+		</div>
+	</div>
+</body>
+</html>
